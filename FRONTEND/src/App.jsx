@@ -2,6 +2,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { useState, useEffect } from "react";
 import BarraLateral from "./components/BarraLateral";
 import Login from "./pages/Login/Login";
+import CrearUsuario from "./pages/Usuario/CrearUsuario";
+import ModificarUsuario from "./pages/Usuario/ModificarUsuario";
+import EliminarUsuario from "./pages/Usuario/EliminarUsuario";
 import EstadoCabañas from "./pages/Cabañas/EstadoCabañas";
 import ListaCabañas from "./pages/Cabañas/ListaCabañas";
 import AñadirReservas from "./pages/Reservas/AñadirReservas";
@@ -48,6 +51,34 @@ function App() {
         <Route path="/" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
         
         {/* Rutas protegidas */}
+        
+        <Route path="/crear-usuario" element={
+          <ProtectedRoute>
+            <Header />
+            <BarraLateral />
+            <CrearUsuario />
+            <Footer />
+          </ProtectedRoute>
+        } />
+        
+        <Route path="/modificar-usuario" element={
+          <ProtectedRoute>
+            <Header />
+            <BarraLateral />
+            <ModificarUsuario />
+            <Footer />
+          </ProtectedRoute>
+        } />
+
+        <Route path="/eliminar-usuario" element={
+          <ProtectedRoute>
+            <Header />
+            <BarraLateral />
+            <EliminarUsuario />
+            <Footer />
+          </ProtectedRoute>
+        } />
+        
         <Route path="/reportes" element={
           <ProtectedRoute>
             <Header />
