@@ -54,7 +54,7 @@ function App() {
         
         <Route path="/crear-usuario" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <CrearUsuario />
             <Footer />
@@ -63,7 +63,7 @@ function App() {
         
         <Route path="/modificar-usuario" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <ModificarUsuario />
             <Footer />
@@ -72,7 +72,7 @@ function App() {
 
         <Route path="/eliminar-usuario" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <EliminarUsuario />
             <Footer />
@@ -81,7 +81,7 @@ function App() {
         
         <Route path="/reportes" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <Reportes />
             <Footer />
@@ -90,7 +90,7 @@ function App() {
         
         <Route path="/estado-cabañas" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <EstadoCabañas />
             <Footer />
@@ -99,7 +99,7 @@ function App() {
         
         <Route path="/lista-cabañas" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <ListaCabañas />
             <Footer />
@@ -108,7 +108,7 @@ function App() {
         
         <Route path="/añadir-reservas" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <AñadirReservas />
             <Footer />
@@ -117,7 +117,7 @@ function App() {
         
         <Route path="/lista-reservas" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <ListaReservas />
             <Footer />
@@ -125,7 +125,7 @@ function App() {
         } />
           <Route path="/calendario-reservas" element={
           <ProtectedRoute>
-            <Header />
+       
             <BarraLateral />
             <CalendarioReservas />
             <Footer />
