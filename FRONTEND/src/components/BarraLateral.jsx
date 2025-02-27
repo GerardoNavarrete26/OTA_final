@@ -47,9 +47,6 @@ const Sidebar = () => {
           )}
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/tinaja">Tinaja</Link>
-        </li>
-        <li className="nav-item">
           <Link className="nav-link" to="/cerrar-sesion">Cerrar Sesión</Link>
         </li>
       </ul>
